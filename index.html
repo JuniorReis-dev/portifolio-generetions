@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Profissional - Cleiton Reis</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <header class="top-navbar">
+      <div class="container navbar-container">
+        <a href="#home" class="navbar-brand">Cleiton Reis</a>
+        <button class="mobile-nav-toggle" aria-label="Abrir menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <nav class="navbar-menu">
+          <ul class="top-nav-menu">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="section">
+      <div class="container">
+        <h1>Olá, eu sou <span class="highlight">Cleiton Reis</span></h1>
+        <h2>Desenvolvedor Full-Stack</h2>
+        <p class="intro-text">
+          Especializado em criar aplicações modernas e responsivas com foco em
+          experiência do usuário e performance.
+        </p>
+        <a
+          href="https://docs.google.com/document/d/1veiDjOuJZTMZ-E1andtE-btkManSq-4F/edit"
+          class="cta-button"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Abrir CV</a
+        >
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="about-container">
+          <div class="about-content">
+            <div class="about-header">
+              <h3 class="about-title">Quem sou eu?</h3>
+              <div class="about-subtitle">Desenvolvedor em formação</div>
+            </div>
+
+            <div class="about-main">
+              <div class="about-image-wrapper">
+                <img
+                  src="https://i.ibb.co/67dNFqHd/1748303233981.jpg"
+                  alt="Cleiton Reis - Desenvolvedor Full-Stack"
+                  class="about-photo"
+                />
+                <div class="about-image-overlay"></div>
+              </div>
+
+              <div class="about-text-content">
+                <p class="about-intro">
+                  Olá! Sou <strong>Cleiton Reis</strong>, estudante de Análise e
+                  Desenvolvimento de Sistemas na UNASP, apaixonado por
+                  tecnologia e desenvolvimento de software.
+                </p>
+
+                <div class="about-highlights">
+                  <div class="highlight-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span
+                      >Formação em Análise e Desenvolvimento de Sistemas</span
+                    >
+                  </div>
+                  <div class="highlight-item">
+                    <i class="fas fa-code"></i>
+                    <span>Bootcamp Generation Brasil - Java Full Stack</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i class="fas fa-rocket"></i>
+                    <span
+                      >Foco em Front-end (React) e Back-end (Java/Spring)</span
+                    >
+                  </div>
+                </div>
+
+                <p class="about-description">
+                  Através do bootcamp Generation Brasil, desenvolvi sólidos
+                  conhecimentos em <strong>Java</strong>,
+                  <strong>Spring Boot</strong>, <strong>React</strong>,
+                  <strong>JavaScript</strong>, <strong>Tailwind CSS</strong>,
+                  <strong>SQL</strong> e <strong>Git</strong>.
+                </p>
+
+                <p class="about-description">
+                  Possuo um perfil proativo e orientado a detalhes, com
+                  experiência em trabalho em equipe e comunicação eficaz. Busco
+                  oportunidades como estagiário ou desenvolvedor júnior para
+                  aplicar meus conhecimentos e continuar crescendo
+                  profissionalmente.
+                </p>
+
+                <div class="about-stats">
+                  <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Tecnologias</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Projetos</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Ano de Experiência</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <a
+                href="https://github.com/JuniorReis-dev"
+                class="cta-button github-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github"></i>
+                Meu GitHub
+              </a>
+              <a
+                href="https://docs.google.com/document/d/1veiDjOuJZTMZ-E1andtE-btkManSq-4F/edit"
+                class="cta-button cv-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fas fa-download"></i>
+                Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Minhas Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-java-plain colored"></i>
+            </div>
+            <h3>Java</h3>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-spring-plain colored"></i>
+            </div>
+            <h3>Spring Boot</h3>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-mysql-plain colored"></i>
+            </div>
+            <h3>MySQL</h3>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-html5-plain colored"></i>
+            </div>
+            <h3>HTML</h3>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-css3-plain colored"></i>
+            </div>
+            <h3>CSS</h3>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-react-original colored"></i>
+            </div>
+            <h3>React</h3>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-git-plain colored"></i>
+            </div>
+            <h3>Git</h3>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-github-original"></i>
+            </div>
+            <h3>GitHub</h3>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-vscode-plain colored"></i>
+            </div>
+            <h3>VS Code</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Meus Projetos</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="https://i.ibb.co/2Y55Nwjr/blog-pessoal.jpg"
+                alt="Projeto Blog Pessoal"
+                class="project-image"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Blogpessoal</h3>
+              <p>
+                O Blog Pessoal é uma aplicação que permite que usuários
+                publiquem, editem e visualizem postagens relacionadas a temas
+                variados, de forma organizada e segura. Este projeto foi
+                desenvolvido com fins educacionais, simulando uma aplicação real
+                de blog para praticar conceitos de API REST com Java e Spring
+                Boot
+              </p>
+              <a
+                href="https://github.com/JuniorReis-dev/Blogpessoal_spring"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver Projeto <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="https://i.ibb.co/4n0sWnbR/Oportunitech.png"
+                alt="Oportunitech"
+                class="project-image"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Oportunitech</h3>
+              <p>
+                Criação de interface responsiva e interativa utilizando HTML,
+                CSS e JavaScript. Implementação de componentes modernos e
+                otimização para diferentes dispositivos.
+              </p>
+              <a
+                href="https://oportunitech.netlify.app/"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver Projeto <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="https://i.ibb.co/tTKhYt6d/Ride-Bro-png.webp"
+                alt="Projeto RideBro"
+                class="project-image"
+              />
+            </div>
+            <div class="project-info">
+              <h3>RideBro</h3>
+              <p>
+                O RideBro é um aplicativo de gerenciamento de caronas
+                desenvolvido em equipe, proporcionando uma maneira eficiente de
+                organizar e acompanhar viagens compartilhadas. Criado com Java,
+                Spring Boot, MySQL e JPA, sua API REST permite cadastro de
+                usuários, veículos e viagens, garantindo uma experiência segura
+                e estruturada. A aplicação segue uma arquitetura modular,
+                facilitando futuras expansões como autenticação, reservas e
+                avaliações de usuários.
+              </p>
+              <a
+                href="https://github.com/Grupo04TurmaJava82/carona_spring"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver Projeto <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="contact-content">
+          <div class="contact-cards-wrapper">
+            <!-- Card do Formulário -->
+            <div class="contact-card">
+              <form
+                action="https://formsubmit.co/5327d73985d568683fa0d57b36efe981"
+                method="POST"
+                id="formulario"
+              >
+                <h1 class="form-title">Envie um E-mail</h1>
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://localhost:8000/sucess.html"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+                <label for="nome">Nome</label>
+                <input
+                  id="nome"
+                  name="nome"
+                  type="text"
+                  placeholder="Digite o seu nome"
+                  required
+                />
+                <span id="txtNome"></span>
+
+                <label for="email">E-mail</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Digite um endereço de e-mail válido"
+                  required
+                />
+                <span id="txtEmail"></span>
+
+                <label for="assunto">Assunto</label>
+                <input
+                  id="assunto"
+                  name="assunto"
+                  type="text"
+                  placeholder="Digite o assunto"
+                  required
+                />
+                <span id="txtAssunto"></span>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  placeholder="Digite a sua mensagem"
+                  required
+                ></textarea>
+
+                <button class="botao" type="submit">Enviar</button>
+              </form>
+            </div>
+
+            <!-- Card de Informações e Contato -->
+            <div class="contact-card">
+              <h3 class="form-title">Informações de Contato</h3>
+              <a
+                href="https://wa.me/5519988276623?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20entrar%20em%20contato."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="whatsapp-button cta-button"
+              >
+                <i class="fab fa-whatsapp"></i> Contato via WhatsApp
+              </a>
+
+              <div class="social-links">
+                <a
+                  href="https://www.linkedin.com/in/cleitonreisbr/"
+                  class="social-icon-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://github.com/JuniorReis-dev"
+                  class="social-icon-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+
+              <!-- Mapa Interativo -->
+              <div
+                id="map"
+                style="
+                  height: 300px;
+                  width: 100%;
+                  margin-top: 20px;
+                  border-radius: 8px;
+                  overflow: hidden;
+                "
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69946.57669286011!2d-47.25668595608771!3d-22.87224310591875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b95bfb508f39%3A0x1ce857c1058169b4!2sHortol%C3%A2ndia%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1749959331006!5m2!1spt-BR!2sbr"
+                  width="300"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Cleiton Reis. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript Modular -->
+    <script src="./assets/js/particles.js"></script>
+    <script src="./assets/js/uiEffects.js"></script>
+    <script src="./assets/js/formHandler.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./assets/js/mapLoader.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

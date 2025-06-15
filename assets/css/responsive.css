@@ -1,0 +1,738 @@
+/* Responsive Styles */
+
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  #home h1 {
+    font-size: 3.2rem;
+  }
+
+  #home h2 {
+    font-size: 1.8rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+  }
+
+  .skill-card {
+    padding: 25px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  #about article {
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  #about_texto h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Responsive Styles for About Section */
+
+@media (max-width: 992px) {
+  .about-main {
+    grid-template-columns: 250px 1fr;
+    gap: 40px;
+  }
+
+  .about-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-image-overlay {
+    width: 230px;
+    height: 230px;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-intro {
+    font-size: 1.2rem;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .stat-number {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-content {
+    padding: 40px 30px;
+  }
+
+  .about-main {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .about-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about-image-overlay {
+    width: 210px;
+    height: 210px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-intro {
+    font-size: 1.1rem;
+  }
+
+  .about-highlights {
+    margin: 25px 0;
+  }
+
+  .highlight-item {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .stat-item {
+    padding: 15px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+
+  .about-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .github-button,
+  .cv-button {
+    width: 200px;
+    text-align: center;
+  }
+}
+
+/* Specific responsiveness for 768px-800px range */
+@media (min-width: 768px) and (max-width: 800px) {
+  /* Navigation adjustments */
+  .navbar-container {
+    padding: 0 20px;
+  }
+
+  .top-nav-menu {
+    gap: 20px;
+  }
+
+  .top-nav-menu a {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+
+  /* Section spacing */
+  .section {
+    padding: 90px 0;
+  }
+
+  .section-title {
+    font-size: 2.1rem;
+    margin-bottom: 45px;
+  }
+
+  /* Home section */
+  #home h1 {
+    font-size: 2.9rem;
+    line-height: 1.2;
+  }
+
+  #home h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+
+  .intro-text {
+    font-size: 1.15rem;
+    margin-bottom: 35px;
+  }
+
+  /* About section specific adjustments */
+  .about-content {
+    padding: 45px 35px;
+  }
+
+  .about-main {
+    grid-template-columns: 220px 1fr;
+    gap: 35px;
+  }
+
+  .about-photo {
+    width: 190px;
+    height: 190px;
+  }
+
+  .about-image-overlay {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-title {
+    font-size: 2.1rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .about-intro {
+    font-size: 1.15rem;
+  }
+
+  .about-description {
+    font-size: 1.05rem;
+  }
+
+  .highlight-item {
+    padding: 13px 18px;
+  }
+
+  .highlight-item span {
+    font-size: 1.05rem;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .stat-item {
+    padding: 18px;
+  }
+
+  .stat-number {
+    font-size: 2.3rem;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+  }
+
+  /* Skills section */
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 18px;
+  }
+
+  .skill-card {
+    padding: 22px 18px;
+  }
+
+  .skill-icon {
+    font-size: 3.2rem;
+    margin-bottom: 18px;
+  }
+
+  .skill-card h3 {
+    font-size: 1.15rem;
+  }
+
+  /* Projects section */
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 28px;
+  }
+
+  .project-img {
+    height: 210px;
+  }
+
+  .project-info {
+    padding: 22px;
+  }
+
+  .project-info h3 {
+    font-size: 1.35rem;
+    margin-bottom: 14px;
+  }
+
+  .project-info p {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 18px;
+  }
+
+  /* Contact section */
+  .contact-content {
+    padding: 45px 25px;
+    margin: 0 20px;
+  }
+
+  .contact-cards-wrapper {
+    gap: 25px;
+  }
+
+  .contact-card {
+    padding: 25px;
+  }
+
+  .whatsapp-button {
+    padding: 16px 38px;
+    font-size: 1.02rem;
+    margin-bottom: 38px;
+  }
+
+  .social-links {
+    gap: 28px;
+    margin-top: 32px;
+  }
+
+  .social-icon-link {
+    width: 58px;
+    height: 58px;
+  }
+
+  .social-icon-link i {
+    font-size: 2.1rem;
+  }
+
+  .form-title {
+    font-size: 1.65rem;
+    margin: 32px 0 18px 0;
+  }
+
+  form input,
+  form textarea {
+    padding: 13px;
+    font-size: 0.98rem;
+  }
+
+  form .botao {
+    padding: 13px;
+    font-size: 0.98rem;
+  }
+
+  /* CTA buttons */
+  .cta-button {
+    padding: 13px 32px;
+    font-size: 0.98rem;
+  }
+
+  .github-button,
+  .cv-button {
+    width: 210px;
+  }
+}
+
+@media (max-width: 768px) {
+  body.mobile-nav-open {
+    overflow: hidden;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+    transition: left 0.4s ease-in-out;
+    z-index: 999;
+  }
+
+  .navbar-menu.active {
+    left: 0;
+  }
+
+  .top-nav-menu {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .top-nav-menu a {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .top-nav-menu a:hover {
+    background: rgba(25, 25, 112, 0.1);
+    transform: scale(1.05);
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  #home h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+
+  #home h2 {
+    font-size: 1.6rem;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 0.95rem;
+  }
+
+  .about-content {
+    padding: 30px 20px;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .about-intro {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .highlight-item {
+    padding: 12px 15px;
+  }
+
+  .highlight-item span {
+    font-size: 1rem;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 300px;
+    margin: 25px auto 0;
+  }
+
+  .stat-item {
+    padding: 12px;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-content {
+    padding: 25px 15px;
+    border-radius: 15px;
+  }
+
+  .about-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-image-overlay {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about-title {
+    font-size: 1.6rem;
+  }
+
+  .about-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-intro {
+    font-size: 0.95rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .highlight-item {
+    padding: 10px 12px;
+  }
+
+  .highlight-item i {
+    font-size: 1.3rem;
+  }
+
+  .highlight-item span {
+    font-size: 0.95rem;
+  }
+
+  .github-button,
+  .cv-button {
+    width: 180px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-title {
+    font-size: 1.4rem;
+  }
+
+  .about-intro {
+    font-size: 0.9rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+  }
+
+  .highlight-item span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  #home h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+
+  #home h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .cta-button {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+
+  .about-content {
+    padding: 25px 15px;
+    border-radius: 15px;
+  }
+
+  .about-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-image-overlay {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about-title {
+    font-size: 1.6rem;
+  }
+
+  .about-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-intro {
+    font-size: 0.95rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .highlight-item {
+    padding: 10px 12px;
+  }
+
+  .highlight-item i {
+    font-size: 1.3rem;
+  }
+
+  .highlight-item span {
+    font-size: 0.95rem;
+  }
+
+  .github-button,
+  .cv-button {
+    width: 180px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .skill-card {
+    padding: 15px 10px;
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .skill-card h3 {
+    font-size: 1rem;
+  }
+
+  .project-img {
+    height: 160px;
+  }
+
+  .project-info {
+    padding: 15px;
+  }
+
+  .project-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+  }
+
+  .contact-content {
+    padding: 30px 15px;
+    margin: 0 10px;
+  }
+
+  .whatsapp-button {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+
+  .whatsapp-button i {
+    font-size: 1.4rem;
+  }
+
+  .social-icon-link {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social-icon-link i {
+    font-size: 1.8rem;
+  }
+
+  .form-title {
+    font-size: 1.4rem;
+  }
+
+  form input,
+  form textarea {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  form .botao {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #home h1 {
+    font-size: 1.9rem;
+  }
+
+  #home h2 {
+    font-size: 1.2rem;
+  }
+
+  .intro-text {
+    font-size: 0.95rem;
+  }
+
+  #about_texto h1 {
+    font-size: 1.6rem;
+  }
+
+  .skill-icon {
+    font-size: 2.2rem;
+  }
+
+  .skill-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .whatsapp-button {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .social-icon-link {
+    width: 45px;
+    height: 45px;
+  }
+
+  .social-icon-link i {
+    font-size: 1.6rem;
+  }
+}

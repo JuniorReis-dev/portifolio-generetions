@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mensagem Enviada - Cleiton Reis</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/sucess.css" />
+  </head>
+  <body>
+    <div class="success-container">
+      <div class="success-icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+
+      <h1 class="success-title">Mensagem Enviada!</h1>
+
+      <p class="success-message">
+        Obrigado por entrar em contato! Sua mensagem foi enviada com sucesso e
+        recebi uma notificação.
+      </p>
+
+      <div class="success-details">
+        <p>
+          <i class="fas fa-clock"></i>
+          Retornarei o contato em até 24 horas
+        </p>
+      </div>
+
+      <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        Voltar ao Portfólio
+      </a>
+    </div>
+
+    <script>
+      // Adicionar efeito de confetti simples
+      function createConfetti() {
+        const colors = ["#25d366", "#20c65a", "#191970", "#ffffff"];
+
+        for (let i = 0; i < 50; i++) {
+          const confetti = document.createElement("div");
+          confetti.style.cssText = `
+                    position: fixed;
+                    width: 10px;
+                    height: 10px;
+                    background: ${
+                      colors[Math.floor(Math.random() * colors.length)]
+                    };
+                    top: -10px;
+                    left: ${Math.random() * 100}vw;
+                    opacity: 0.8;
+                    border-radius: 50%;
+                    pointer-events: none;
+                    z-index: 1000;
+                    animation: fall ${Math.random() * 3 + 2}s linear forwards;
+                `;
+
+          document.body.appendChild(confetti);
+
+          setTimeout(() => {
+            confetti.remove();
+          }, 5000);
+        }
+      }
+
+      // CSS para animação de queda
+      const style = document.createElement("style");
+      style.textContent = `
+            @keyframes fall {
+                to {
+                    transform: translateY(100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        `;
+      document.head.appendChild(style);
+
+      // Executar confetti quando a página carregar
+      window.addEventListener("load", () => {
+        setTimeout(createConfetti, 500);
+      });
+    </script>
+  </body>
+</html>
