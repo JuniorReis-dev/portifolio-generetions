@@ -103,10 +103,7 @@ function initParticles() {
   const particleSize = 0.02;
   const particleColor = 0xffffff;
 
-  let mouseX = 0;
-  let mouseY = 0;
-  let targetX = 0;
-  let targetY = 0;
+  // Removed mouseX, mouseY, targetX, targetY as they are no longer needed for rotation based on mouse movement
   let windowHalfX = window.innerWidth / 2;
   let windowHalfY = window.innerHeight / 2;
   let isClicked = false;
@@ -175,17 +172,16 @@ function initParticles() {
   const particleSystem = new THREE.Points(particlesGeometry, particleMaterial);
   scene.add(particleSystem);
 
-  document.addEventListener("mousemove", onDocumentMouseMove);
+  // Removed mousemove listener
   document.addEventListener("mousedown", onDocumentMouseDown);
   document.addEventListener("mouseup", onDocumentMouseUp);
+  // Removed contextmenu listener as it's not needed for this request
 
-  function onDocumentMouseMove(event) {
-    mouseX = (event.clientX - windowHalfX) * 0.03;
-    mouseY = (event.clientY - windowHalfY) * 0.03;
-  }
+  // Removed onDocumentMouseMove function
 
   function onDocumentMouseDown(event) {
     if (event.button === 0) {
+      // Left click
       isClicked = true;
       clickIntensity = 1.0;
 
@@ -208,18 +204,19 @@ function initParticles() {
     }
   }
 
-  function onDocumentMouseUp() {
-    isClicked = false;
+  function onDocumentMouseUp(event) {
+    if (event.button === 0) {
+      // Left click
+      isClicked = false;
+    }
   }
 
   function animate() {
     requestAnimationFrame(animate);
 
-    targetX += (mouseX - targetX) * 0.005;
-    targetY += (-mouseY - targetY) * 0.005;
-
-    particleSystem.rotation.x += 0.0002 + targetY * 0.0001;
-    particleSystem.rotation.y += 0.0002 + targetX * 0.0001;
+    // Continuous movement for particles, without mouse influence
+    particleSystem.rotation.x += 0.0002;
+    particleSystem.rotation.y += 0.0002;
 
     const time = Date.now() * 0.0002;
     particleSystem.rotation.z = time * 0.02;

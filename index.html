@@ -20,8 +20,8 @@
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
   </head>
   <body>
     <header class="top-navbar">
@@ -334,11 +334,7 @@
                 id="formulario"
               >
                 <h1 class="form-title">Envie um E-mail</h1>
-                <input
-                  type="hidden"
-                  name="_next"
-                  value="http://localhost:8000/sucess.html"
-                />
+                <input type="hidden" name="_next" value="/sucess.html" />
                 <input type="hidden" name="_captcha" value="false" />
                 <label for="nome">Nome</label>
                 <input
@@ -449,11 +445,10 @@
     </footer>
 
     <!-- JavaScript Modular -->
-    <script src="./assets/js/particles.js"></script>
-    <script src="./assets/js/uiEffects.js"></script>
-    <script src="./assets/js/formHandler.js"></script>
+    <script src="./particles.js"></script>
+    <script src="./uiEffects.js"></script>
+    <script src="./formHandler.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="./assets/js/mapLoader.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
